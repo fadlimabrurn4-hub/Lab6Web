@@ -183,7 +183,7 @@ Atribut `defer` dihapus sehingga `<script src="script.js">` dijalankan di `<head
      | No | Skenario | Input | Hasil |
      |----|----------|-------|-------|
      | 1 | Semua input kosong | nama, email, usia kosong | "Nama wajib diisi." |
-     | 2 | Email tidak valid | nama `raihan`, email `raihandika#gmail.com` | "Masukkan email yang valid." |
+     | 2 | Email tidak valid | nama `Fadli`, email `fadlimabrur#gmail.com` | "Masukkan email yang valid." |
      | 3 | Usia kosong atau di luar 17-100 | nama dan email valid, usia kosong | "Usia harus berupa bilangan bulat 17–100." |
      | 4 | Sesi belum dipilih (mini project) | nama dan email valid, sesi `Pilih...` | "Sesi harus dipilih." |
      | 5 | Semua input valid | nama, email, dan usia sesuai aturan | "Validasi berhasil. Form siap diproses." |
