@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran Workshop</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="hero">
+    <h1>Pendaftaran Workshop Pemrograman Web</h1>
+    <p>Isi formulir di bawah ini untuk mengamankan kursimu.</p>
+  </header>
+
+  <main class="layout">
+
+    <!-- Form pendaftaran -->
+    <section class="card" aria-labelledby="judulForm">
+      <h2 id="judulForm">Formulir</h2>
+
+      <form id="formWorkshop" novalidate>
+
+        <div class="field">
+          <label for="nama">Nama lengkap</label>
+          <input id="nama" name="nama" type="text" autocomplete="name"
+                 placeholder="Contoh: Budi Santoso">
+          <p class="error" id="errorNama" aria-live="polite"></p>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email"
+                 placeholder="nama@contoh.com">
+          <p class="error" id="errorEmail" aria-live="polite"></p>
+        </div>
+
+        <div class="field">
+          <label for="sesi">Pilihan sesi</label>
+          <select id="sesi" name="sesi">
+            <option value="">-- Pilih sesi --</option>
+            <option value="web-dasar">Dasar Web (HTML &amp; CSS)</option>
+            <option value="js-dom">JavaScript DOM &amp; Event</option>
+            <option value="git">Git &amp; GitHub untuk Pemula</option>
+          </select>
+          <p class="info" id="infoSesi"></p>
+          <p class="error" id="errorSesi" aria-live="polite"></p>
+          <p id="info" style="display: none;">Sesi dipilih: <span id="pilihan"></span>
+          </p>
+        </div>
+
+        <div class="field">
+          <label for="catatan">Catatan <span class="opsional">(opsional)</span></label>
+          <textarea id="catatan" name="catatan" rows="3" maxlength="150"
+                    placeholder="Harapan atau pertanyaanmu untuk workshop"></textarea>
+          <p class="counter">Jumlah karakter: <span id="jumlahKarakter">0</span> / 150</p>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn btn-utama">Daftar</button>
+          <button type="reset" class="btn btn-sekunder" id="tombolReset">Hapus Input</button>
+        </div>
+
+      </form>
+
+      <p id="pesanForm" class="pesan" role="status" aria-live="polite"></p>
+    </section>
+
+    <!-- Ringkasan langsung -->
+    <aside class="card" aria-labelledby="judulRingkasan">
+      <h2 id="judulRingkasan">Ringkasan Input</h2>
+      <dl class="ringkasan">
+        <dt>Nama</dt>
+        <dd id="ringkasNama">-</dd>
+
+        <dt>Email</dt>
+        <dd id="ringkasEmail">-</dd>
+
+        <dt>Sesi</dt>
+        <dd id="ringkasSesi">-</dd>
+
+        <dt>Catatan</dt>
+        <dd id="ringkasCatatan">-</dd>
+      </dl>
+    </aside>
+
+  </main>
+
+</body>
+</html>
