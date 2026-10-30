@@ -51,7 +51,7 @@ Pengujian lima kondisi:
 |---------|-------|
 | Semua input kosong | "Nama wajib diisi." |
 | Nama terisi, email kosong | "Masukkan email yang valid." |
-| Email salah format (`raihandika#gmail.com`) | "Masukkan email yang valid." |
+| Email salah format (`fadlimabrur#gmail.com`) | "Masukkan email yang valid." |
 | Nama dan email valid, usia kosong | "Usia harus berupa bilangan bulat 17–100." |
 | Semua input valid | "Validasi berhasil. Form siap diproses." |
 <img src="foto/hasil5_l.png">
